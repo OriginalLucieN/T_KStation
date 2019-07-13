@@ -1,1 +1,25 @@
 1 - 项目第三方支付记录日记参考：必成支付，LogTxtHelper.write
+
+2 - css3背景颜色线性渐变属性linear
+     div{
+     width:360px;
+     height: 200px;
+     background: -webkit-gradient(linear,39%,74%,33%,0%, from(rgb(104,94,255)), to(rgb(255,81,90)));
+     }
+
+  - css3背景颜色线性渐变属性radial
+     div{
+     width:360px;
+     height: 200px;
+     background: -webkit-gradient(radial,80,10,10,80,10,80, from(rgb(0,210,218)), to(rgb(3,66,11)));
+     }
+
+3 - jquery map函数遍历组数
+$(function(){
+	var arr = [1,2,3,4,5,6]
+	var bigNum = $.map(arr,function(num){
+		if(num > 2){
+			return num;
+		}
+	})
+})
