@@ -1,0 +1,92 @@
+﻿1.Web Pages 类参考网址：
+http://www.runoob.com/aspnet/webpages-ref-classes.html
+
+打开服务器管理器：
+cmd services.msc
+
+打开iis服务器：
+cmd -> inetmgr
+
+Framework路径：
+C:\Windows\Microsoft.NET\Framework\v4.0.30319
+
+孑孓jiejue
+
+
+css3 文字闪烁效果
+http://www.fly63.com/article/detial/616
+
+德国相亲节目
+Naked Attraction
+
+SQL Server
+sa 帐号密码： gyl19940615
+
+新外包项目：
+103.82.143.42:88/elb88/
+
+mysql  DOS 启动命令
+mysql -hlocalhost -uroot -pgyl19940615  或者 mysql -u root -p ,回车
+
+
+腾讯应用宝
+55479166
+zkevin365261
+
+
+百度应用市场
+18650052370
+zkevin365261
+
+今日彩：
+http://ceshi.27945.com 前台
+http://13.76.40.34:7000 后台
+
+旧外包帐号
+管理后台admin/wang5858     admin6788/ad123456  登录获取后台登录码
+总后台 admin/654321  登录获取命令码
+
+新外包git地址：
+http://10.20.23.108:10101
+帐号密码信息   lucien     lc.168.com 
+
+远程调试dos命令：
+mstsc
+
+新外包测试后台
+http://27.124.17.244:8001/
+新外包api
+http://27.124.17.244:8005/
+新外包前台
+http://27.124.17.244:8006/
+
+
+新外包第三方支付：
+httpPost返回xml格式需要解析成二维码图片 例：赢宝付
+
+前端 prompt("请输入1~9的整数")；
+
+gitblit公钥保存地址： /c/Users/Administrator/.ssh/id_rsa.pub.
+
+
+jdk安装位置：C:\Program Files\Java\jdk1.7.0_80\
+
+
+win7/win8/win10系统下Visual Studio 2013各个版本的密钥：
+Visual Studio Ultimate 2013 KEY:BWG7X-J98B3-W34RT-33B3R-JVYW9 
+Visual Studio Premium 2013 KEY:FBJVC-3CMTX-D8DVP-RTQCT-92494 
+Visual Studio Professional 2013 KEY:XDM3T-W3T3V-MGJWK-8BFVD-GVPKY 
+Team Foundation Server 2013 KEY:MHG9J-HHHX9-WWPQP-D8T7H-7KCQG
+
+
+总后台：master.hcp1688.com
+管理后台：admin.hcp1688.com
+PC :   hcp1688.com 
+wap : m.hcp1688.com
+api :  jk.hcp1688.com
+Pay    :   pay.hcp1688.com
+
+正式站总后台：
+http://ybguoji.com
+admin
+123456
