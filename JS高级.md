@@ -1,145 +1,104 @@
-## JS高级
+JS高级
 
-一、原型：
+一、面向对象之创建对象
 
-```html
-funtion Person(){
+1.var obj = new Object();通过new关键字创建
 
-};
+2.1var obj2 = {};对象字面量.简单字面量
 
-Person.prototype.name = 'xxx';
+obj2.name = 'xxx';
 
-Person.prototype.age= 22;
+2.2var obj3 = 
 
-Person.prototype.action= function(){
+{
 
-	console.log(this.name);
+​	name:'bobie',
 
-};
+​	age:25，
 
-var person1 = new Person();
+​	todo:function(){
 
-person1.name;
-// 修改原型的属性
-person1.__proto__.name = 'yyy';// 注意：直接修改原型的属性，所有原型 constructor构造函数指向的函数的属性都跟着改变。
-var person2 = new Person();
-console.log(Person.prototype.isPrototypeOf(person2));
+​	},
 
+​	address: 'zz'
 
-// 混合使用构造函数和原型
-function Person(name,age){
-	this.name = name;
-	this.age = age;
-	//this.action = function(){
-	//	return this.name;
-	//}
-}
-Person.prototype.action = function(){
-	return this.name;
-}
-var  aa = new Person('xxx',25);
-console.log(aa.action());
-```
+} 嵌套字面量
 
 
 
-二、继承：
+3.构造函数
 
-```
-function Action(){	
+function Person(name,age){	
+
+​	this.name = name;
+
+​	this.age = age;
+
+​	this.todo = function(){
+
+​		return this.name;
+
+​	}
 
 }
 
-Action.prototype.canDo = function(){
+var person = new Person('yl',25);实例化
 
-	console.log('吃饭睡觉。。。');
-
-}
-
-function Ben(){}
-
-Ben.prototype = new Action();
-
-var aa = new Ben();
-
-aa.canDo();
+person.todo();
 
 
 
-练习：
-// call()   apply()
-// call和apply的作用都是在特定的作用域中将函数绑定到另外一个对象上去运行，即可以用来重新定义函数的执行环境，两者仅在定义参数方式上有所区别
-function ParentType(name,age){
-	this.name = name;
-	this.age = age;
-};
-ParentTyoe.prototype.getParentName = function(){
-    return this.name;
-}
-function SonType(){
-	ParentType.call(this,'xxx',32);  // 子类调用父类并传参
-    this.name = 'tt';
-}
-SonType.prototype = new ParentType();
-SonType.prototype.getSonName = function(){
-    return this.name;
-}
-var aa = new SonType();
-aa.name;
-aa.age;
-```
+// 构造函数和普通函数的区别
+
+// this指向 -- 构造函数的this指向创建的对象实例上,普通函数指向函数的调用者
+
+// 调用方式 -- 构造函数需要new实例化，普通函数直接调用你
+
+//  命名方式 -- 构造函数首字母大写，普通函数遵循驼峰命名法即可
 
 
 
+二、面向对象之属性
+
+var obj  = {};
+
+obj  .name = 'xxx';
+
+1.属性、属性的删除
+
+属性的获取和设置 -- . / [] （区别：.是取自身属性，[]可以是变量）
+
+属性的删除 -- delete obj.name
 
 
 
+2.属性的检测
+
+2.1 in 运算符
+
+console.log('name' in obj); // 返回 false/true
+
+2.2 hasOwnProperty()
+
+console.log(o.hasOwnProperty('name')); // 返回 false/true
+
+2.3 != undefined  / !==undefined 
+
+console.log(o.name !== undefined); // 不准确 (例如：obj.name = 'undefined')
 
 
 
-##### 闭包递归
+3.枚举属性
 
-```
-闭包：
-function checkScope(){
-	var scope = 'son';
-	return function sonScope(){
-        var scope = 'son2';
-        return scope;
-	}
-}
-checkScope()();
+// for in 
 
+var o  = {x:1,y:2,z:3}
 
-var fun = (function checkScope(){
-	var scope = 'son';
-	return function sonScope(){
-        var scope = 'son2';
-        return scope;
-	}
-}());
-fun();
+for(var a in o){console.log(a);} // x,y,z
 
-// 传参
-function setup(x){
-    var i = 0;
-    return function feedback(){
-        return x[i++];
-    }
-}
-var next = setup(['a','b','c']);
-next();
+for(var a in o){console.log(o[a]);} // 1,2,3
 
 
 
-递归： 自身调自身
-function fact(num){
-    if(num<=1){
-        return 1;
-    }else{
-		return num * fact(num - 1);
-	}
-}
-fact(4);
-```
+4.序列化对象
 

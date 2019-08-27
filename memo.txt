@@ -66,27 +66,10 @@ httpPost返回xml格式需要解析成二维码图片 例：赢宝付
 
 前端 prompt("请输入1~9的整数")；
 
-gitblit公钥保存地址： /c/Users/Administrator/.ssh/id_rsa.pub.
+提升网络速度：
+1.win+R,输入gpedit.msc 
+2.选择Windows设置，基于策略的Qos，右键选择高级设置，选择指定入站TCP吞吐量级别为3；
+3.选择管理模版，选择网络，选择Qos数据包计划程序，选择限制可保留带宽，选择已启用，带宽限制为0%
 
 
-jdk安装位置：C:\Program Files\Java\jdk1.7.0_80\
 
-
-win7/win8/win10系统下Visual Studio 2013各个版本的密钥：
-Visual Studio Ultimate 2013 KEY:BWG7X-J98B3-W34RT-33B3R-JVYW9 
-Visual Studio Premium 2013 KEY:FBJVC-3CMTX-D8DVP-RTQCT-92494 
-Visual Studio Professional 2013 KEY:XDM3T-W3T3V-MGJWK-8BFVD-GVPKY 
-Team Foundation Server 2013 KEY:MHG9J-HHHX9-WWPQP-D8T7H-7KCQG
-
-
-总后台：master.hcp1688.com
-管理后台：admin.hcp1688.com
-PC :   hcp1688.com 
-wap : m.hcp1688.com
-api :  jk.hcp1688.com
-Pay    :   pay.hcp1688.com
-
-正式站总后台：
-http://ybguoji.com
-admin
-123456
